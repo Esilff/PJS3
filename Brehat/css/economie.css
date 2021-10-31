@@ -1,0 +1,20 @@
+::-webkit-scrollbar{
+    display: none;
+}   
+
+.boite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boite img{
+    max-height: 70%;
+    max-width: 50%;
+}
+
+#graphe{
+    min-width: 65%;
+    min-height: 50%;
+}
