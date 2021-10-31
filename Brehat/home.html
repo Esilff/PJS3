@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>Île de Bréhat - le site</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+    </head>
+    <body>
+        <!-- Topnav-->
+        <div id="page">
+            <div class="topnav">
+                <div class="topnav-option-dropmenu">
+                    <img  id="topnav-menu-button"src ="images/logo.svg" onclick = "dropMenu()">            
+                </div>
+                <div class="topnav-option-links" >
+                    <a class="animated-link " href="tourisme.html">TOURISME</a>
+                </div>
+                <div class="topnav-option-logo">
+                    <img id="topnav-logo" src="./images/logo-col.png">
+                </div>
+                <div class="topnav-option-links" >
+                    <a class="animated-link" href="economie.html">ECONOMIE</a>
+                </div>
+    
+            </div>
+            <div id="dropdown">
+                <div id="dropdown-option-one" >
+                    <a class="animated-link" href="tourisme.html">TOURISME</a>
+                </div>
+                <div id="dropdown-option-two">
+                    <a class="animated-link" href="economie.html">ECONOMIE</a>
+                </div>
+            </div>
+            
+            <!-- Video -->
+            <video autoplay muted loop >
+                <source src="clip/video.mp4" type="video/mp4">
+            </video>
+    
+            <!-- Infos importantes -->  
+            
+            <div class="splashScreen">
+                <h1>Degemer mat!*</h1>
+                <h2>*Bienvenue</h2>
+            </div>
+
+            <div id="infoPage">
+                <h1 style="color:white; font-family: 'Libre Baskerville', serif;
+                font-size: 75;scroll-snap-align: start;">Infos</h1>
+                <div id="infos-importantes" >
+                    
+                    <div class="carousel">
+                        <div id="arrow-button-one" onclick="leftClick()">
+                            <svg viewBox="0 0 256 512" width="10" title="angle-left">
+                                <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+                            </svg>
+                        </div>
+                        <div class="slide" id="1" style="background-color: rgb(133, 11, 11);">
+                          <h1>Nouvelles mesures COVID-19</h1>
+                        </div>
+                        <div class="slide" id="2" style="display: none;">
+                            <div class="embed-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.768225936972!2d-3.0034243845539392!3d48.84355950970515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48120fffe678b0ff%3A0xd2eca6f5993e3e1!2sMairie%20de%20Br%C3%A9hat!5e0!3m2!1sfr!2sfr!4v1635691148820!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></iframe></div>
+                        </div>
+                        <div class="slide" id="3" style="display:none; align-self: center;">
+                            <iframe id="widget_autocomplete_preview"  width="100%" frameborder="0" src="https://meteofrance.com/widget/prevision/2201651##00BCD4B3"> </iframe>                    </div>
+                        <div id="arrow-button-two" onclick="rightClick()">
+                            <svg viewBox="0 0 256 512" width="10" title="angle-right">
+                                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="color:white; font-family: 'Libre Baskerville', serif;
+                font-size: 75;scroll-snap-align: start;">Annonces</h1>
+                <div id="infos">
+                    
+                    <div class="info">
+                        <h3>Campagne de dons </h3>
+                        <img src="./images/accueil/reno_eglise.jpg" >
+                    </div>
+                    <div class="info">  
+                        <img src="./images/accueil/excursion_cotes.jpg" >
+                        <h3>Activités sur les côtes d'Armor</h3>
+                    </div>
+                    <div class="info">
+                        <h3>Réunion du Conseil Municipal </h3>
+                        <img src="./images/accueil/mairie.jpg" >
+                    </div>
+                </div>
+
+                <h1 style="color:white; font-family: 'Libre Baskerville', serif;
+                font-size: 75;scroll-snap-align: start;">Evènements</h1>
+                <div id="infos">
+                    
+                    <div class="info event">
+                        <h3 style="color:white;">Marché de Noël</h3>
+                        <img src="./images/accueil/marchenoel.jpeg" >
+                        <h3 style="color:white;">Samedi 4 décembre</h3>
+                    </div>
+                    <div class="info event">  
+                        <h3 style="color:white;">Excursion sur la Côte d'Armor</h3>
+                        <img src="./images/brehatCotesArmor.jpg" >
+                        <h3 style="color:white;">Mardi 12 novembre</h3>
+                    </div>
+                    <div class="info event">
+                        <h3 style="color:white;">Départ du Tour du Monde à la Voile</h3>
+                        <img src="./images/accueil/tourdumonde.jpg" >
+                        <h3 style="color:white;">Jeudi 19 novembre</h3>
+
+                    </div>
+                    
+                </div>
+                <h2 onclick="displayForm()">Newsletter</h2>
+                <div id="form" style="display: none;">
+                    
+                    <h1>Inscrivez-vous à notre Newsletter !</h1>
+                    <form action="" method="get" class="form-content">
+                        
+                        <div class="form-item">
+                          <label for="name">Nom : </label>
+                          <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-item">
+                          <label for="email">Mail : </label>
+                          <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-item" style="margin-left: 18.5%;">
+                          <input type="submit" value="S'inscrire" >
+                        </div>
+                        
+                      </form>
+                      <svg viewBox="0 0 512 512" width="100" title="window-close" onclick="displayForm()">
+                        <path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z" />
+                      </svg>
+                </div>
+            </div>
+
+            
+
+            
+           
+            <div class="footer">
+                <div id="renvoiFacebook">
+                    <h2>Accédez à nos dernières <br> photos sur notre page Facebook !</h2>
+                </div>
+                
+                <h2>©Mairie de Bréhat/Agence 4Zem</h2>
+                <h2>Responsable d'édition: Justine BRODIER</h2>
+            </div>
+
+        </div>
+        
+
+        
+            
+
+        
+
+        
+    </body>
+</html>
+
+<script>
+
+var index = 1;
+
+function rightClick () {
+ 
+ var slideOne = document.getElementById(index.toString()); 
+ 
+  
+  slideOne.style.opacity = "0%";
+  slideOne.style.display = "none";
+  if (index == 3) index = 1;
+  else index++;
+  var slideTwo = document.getElementById(index.toString()); 
+  slideTwo.style.display = "flex";
+  slideTwo.style.opacity = "100%";
+}
+
+function leftClick() {
+  var slideOne = document.getElementById(index.toString()); 
+ 
+  
+  slideOne.style.opacity = "0%";
+  slideOne.style.display = "none";
+  if (index == 1) index = 3;
+  else index--;
+  var slideTwo = document.getElementById(index.toString()); 
+  slideTwo.style.display = "flex";
+  slideTwo.style.opacity = "100%";
+}
+
+    
+let page = document.getElementById("form");
+    window.onscroll = function() {
+        var vertical_position = 0;
+        if (pageYOffset)//usual
+            vertical_position = pageYOffset;
+        else if (document.documentElement.clientHeight)//ie
+            vertical_position = document.documentElement.scrollTop;
+        else if (document.body)//ie quirks
+            vertical_position = document.body.scrollTop;
+
+        var your_div = document.getElementById('form');
+        your_div.style.top = (vertical_position + 200) + 'px';
+    }
+    setInterval(function(){ 
+        if (checkWidth(650)) {
+            dropdown.style.display ="flex";
+            changeImage("./images/logo-col.png");
+        }
+        else {
+            dropdown.style.display ="none";
+            changeImage("./images/logo-col.png");
+            
+        }
+        
+}, 100);
+    
+    function checkWidth(value) {
+        if (window.screen.width <= value) return true;     
+    }
+
+    function changeImage(img) {
+        document.getElementById("topnav-logo").src = img;
+    }
+
+    var dropdown = document.getElementById("dropdown");
+    var dropdownOpOne = document.getElementById("dropdown-option-one");
+    var dropdownOpTwo = document.getElementById("dropdown-option-two");
+    var dropdownHidden = true;
+
+    function dropMenu() {
+        if (dropdownHidden) {
+            dropdown.style.height = "200px";
+            
+            dropdownOpOne.style.opacity = "100%";
+            dropdownOpTwo.style.opacity = "100%";
+            dropdownHidden = false;
+        }
+        else {
+            dropdown.style.height = "0px";
+            
+            dropdownOpOne.style.opacity = "0%";
+            dropdownOpTwo.style.opacity = "0%";
+            dropdownHidden = true;
+        }
+        
+        
+        
+    }
+
+    var formDisplay = false;
+
+    function displayForm (){
+        if (!formDisplay) {
+            document.getElementById("form").style.display = "flex";
+            formDisplay = true;
+        }
+        
+        else {
+            document.getElementById("form").style.display = "none";
+            formDisplay = false;
+        }
+    }
+
+   
+
+    
+
+    
+</script>
